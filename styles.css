@@ -11,6 +11,7 @@ body {
   height: 100%;
 }
 body {
+  font-size: 0.75rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -41,6 +42,55 @@ h6 {
 #__next {
   isolation: isolate;
 }
-body{
-    position: ;
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  font-family: "Kumbh Sans", sans-serif;
+}
+.main-layout {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  background-color: white;
+  width: 20rem;
+  border-radius: 20px;
+}
+.woman-svg > svg {
+  position: absolute;
+  top: -120px;
+  left: 38px;
+}
+.main-content{
+    margin-top: 7rem;
+    padding: 1.5rem;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.question-answer{
+    margin-bottom: 1rem;
+    border-bottom: solid 1.5px hsl(240, 5%, 91%);
+}
+.question-preview{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow-container{
+    align-items: center;
+    cursor: pointer;
+}
+.answer{
+    display: none;
+    margin-bottom: 1rem;
 }
