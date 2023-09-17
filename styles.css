@@ -70,6 +70,9 @@ body {
 .main-content {
   margin-top: 7rem;
   padding: 1.5rem;
+  max-height: 23rem;
+  overflow: scroll;
+
 }
 h1 {
   text-align: center;
@@ -101,4 +104,41 @@ h1 {
 }
 .bold-question {
   font-weight: bold;
+}
+.woman-svg-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .card {
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+  }
+  .woman-svg {
+    display: none;
+  }
+  .woman-svg-desktop {
+    display: block;
+    width: 300px;
+  }
+  .woman-svg-desktop > svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .main-content {
+    max-height: 40rem;
+    margin-top: 0;
+    max-height: 23rem;
+    overflow: scroll;
+  }
+  .question-answer {
+    width: 20rem;
+  }
+  .cube-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
